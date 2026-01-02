@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+</head>
+<body>
+  <h2>Calculadora básica</h2>
+
+  <input id="a" type="number" placeholder="Número 1">
+  <input id="b" type="number" placeholder="Número 2">
+
+  <br><br>
+
+  <button onclick="sumar()">Sumar</button>
+
+  <h3 id="resultado"></h3>
+
+  <script>
+    function sumar() {
+      const a = Number(document.getElementById("a").value);
+      const b = Number(document.getElementById("b").value);
+      document.getElementById("resultado").innerText = "Resultado: " + (a + b);
+    }
+  </script>
+</body>
+</html>
